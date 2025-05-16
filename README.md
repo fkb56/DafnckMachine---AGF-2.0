@@ -1,4 +1,8 @@
-# 🚀 Agentic Coding Framework, powered by Pheromind
+# 🚀 Agentic Coding Framework, powered by Pheromind 
+
+[[[[ SUPPORT : https://paypal.me/GarethSimono ]]]
+
+
 
 *Automate Your Vision into Realit - Build anything !*
 *Transforming software / app / saas / game development with spec-driven, AI-powered agentic workflows.*
