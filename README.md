@@ -2,7 +2,17 @@
 
 [[[[ SUPPORT : https://paypal.me/GarethSimono ]]]
 
+-
 
+
+
+ Initialisation : with Head Orchestrator 🎩 say : "let's get started with odebase Xray.md and 01_AI-RUN/00_Getting_Started.md" 
+ 
+ And let it FLowCoding
+
+
+
+-
 
 *Automate Your Vision into Realit - Build anything !*
 *Transforming software / app / saas / game development with spec-driven, AI-powered agentic workflows.*
