@@ -1,5 +1,6 @@
-# 🚀 Agentic Coding Framework, powered by Pheromind - Automate Your Vision into Reality 🐜
-**Tagline:** *Transforming software development with Pheromind: an AI-verifiable, swarm-intelligent, and specification-driven agentic workflow, executed through the `01_AI-RUN/` script sequence.*
+# 🚀 Agentic Coding Framework, powered by Pheromind
+
+**Tagline:** *Automate Your Vision into Realit - Build anything !*
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
