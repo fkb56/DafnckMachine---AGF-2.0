@@ -1,6 +1,9 @@
 # 🚀 Agentic Coding Framework, powered by Pheromind
 
-**Tagline:** *Automate Your Vision into Realit - Build anything !*
+*Automate Your Vision into Realit - Build anything !*
+*Transforming software / app / saas / game development with spec-driven, AI-powered agentic workflows.*
+
+↳ Just start with `let's get started with '01_AI-RUN/00_Getting_Started.md'` with '🎩 Head Orchestrator' 
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
