@@ -9,9 +9,9 @@
 
 **Expected Inputs:**
 - A refined `core_concept.md` document.
-- The PRD template structure (typically `01_AI-RUN/Template/PRD_template.md`, and this prompt itself guides its completion).
+- The PRD template structure (individual files located in `01_AI-RUN/Template/PRD/`, with `01_AI-RUN/Template/PRD/README.md` outlining the structure).
 
-**Current Phase:** PRD Generation
+**Current Phase:** PRD Generation - Initial Draft in `PRD/` directory, then Consolidation into `project_prd.md`.
 
 ## Role Definition
 
@@ -23,24 +23,28 @@ Create an exhaustive, meticulously detailed Product Requirements Document (PRD) 
 
 ## Input Context
 
-You have access to three critical documents:
+You have access to critical documents and information:
 
-1. **The Core Concept Document** - Contains the refined, market-validated concept with target users, value proposition, and key features
-2. **The PRD Template (`01_AI-RUN/Template/PRD_template.md`)** - Provides the exact structure and sections to be copied and then followed in the new `project_prd.md` file.
-3. **User-Specific Information** - Any additional context, preferences, or requirements provided by the user to be incorporated into `project_prd.md`.
+1.  **The Core Concept Document** - Contains the refined, market-validated concept with target users, value proposition, and key features.
+2.  **The PRD Template Files (Source: `01_AI-RUN/Template/PRD/`)** - A directory containing individual Markdown files, each representing a section of the PRD (e.g., `00_metadata_and_preamble.md`, `01_ai_agent_onboarding_protocol.md`, etc.). The file `01_AI-RUN/Template/PRD/README.md` outlines the correct order and titles of these sections.
+3.  **User-Specific Information** - Any additional context, preferences, or requirements provided by the user.
  
 ## Approach and Methodology
 
-### 1. Template Adherence
+### 1. Setup and Initial Copy
+    a.  **Create Root `PRD/` Directory:** First, ensure a directory named `PRD` exists at the root of the project. If not, create it.
+    b.  **Copy Templates:** Copy all individual template files from `01_AI-RUN/Template/PRD/` into the newly created or existing root `PRD/` directory. This `PRD/` directory will be your working space for editing the individual sections. The original templates in `01_AI-RUN/Template/PRD/` **must remain untouched**.
 
-You **MUST** work on the **copied file (`project_prd.md`)** and follow the template structure with absolute precision:
-- Maintain all section numbers and titles exactly as specified in the template.
-- Include all subsections in their proper hierarchy within `project_prd.md`.
-- Preserve all formatting conventions from the template within `project_prd.md`.
-- Address every single section within `project_prd.md` with appropriate depth and detail.
-- Never skip, combine, or reorganize sections within `project_prd.md`.
+### 2. Section-by-Section PRD Elaboration (Working in root `PRD/` directory)
 
-### 2. Core Concept Integration
+You **MUST** work on the **copied files within the root `PRD/` directory**. For each file (e.g., `PRD/00_metadata_and_preamble.md`, `PRD/01_ai_agent_onboarding_protocol.md`, etc.):
+    a.  **Integrate Core Concept:** Incorporate relevant information from `core_concept.md`.
+    b.  **Incorporate User-Specific Information:** Adapt content based on user-provided details.
+    c.  **Apply Technical Expertise:** Fill in technical details, propose solutions, and elaborate on requirements as guided by this prompt and your role.
+    d.  **Maintain Structure:** Preserve the internal structure and formatting of each individual file as defined in its original template. Address all placeholders and instructions within each file.
+    e.  **Seek Clarification:** If ambiguities arise for a specific section, clearly note questions within that section file in `PRD/` or use the standard AI-Human interaction protocol.
+
+### 3. Core Concept Integration (Applied to files in root `PRD/`)
 
 Seamlessly integrate the validated core concept throughout the PRD:
 - Use the refined value proposition as the foundation for the Product Vision (Section 1.3)
@@ -50,7 +54,7 @@ Seamlessly integrate the validated core concept throughout the PRD:
 - Apply the Success Metrics to Key Performance Indicators (Section 1.5)
 - Incorporate identified risks into the Risks and Dependencies section (Section 10)
 
-### 3. User-Specific Adaptation
+### 4. User-Specific Adaptation (Applied to files in root `PRD/`)
 
 Carefully adapt the PRD based on user-provided information:
 - Prioritize any explicit user preferences or requirements
@@ -58,7 +62,7 @@ Carefully adapt the PRD based on user-provided information:
 - Highlight areas where user input is particularly needed for validation, **especially concerning design preferences (colors, typography, overall style) if not already clearly defined.**
 - Maintain the user's original intent and vision throughout.
 
-### 4. Technical Expertise Application
+### 5. Technical Expertise Application (Applied to files in root `PRD/`)
 
 Leverage your full-stack architecture expertise to provide detailed technical specifications:
 - Propose a comprehensive system architecture (Section 5.3) with clear diagrams and explanations
@@ -67,7 +71,9 @@ Leverage your full-stack architecture expertise to provide detailed technical sp
 - Detail API designs with endpoints, request/response formats, and authentication methods (Section 3.6)
 - Outline thorough test strategies including unit, integration, and end-to-end testing (Section 6)
 
-## Section-Specific Guidelines
+## Section-Specific Guidelines (Applied to files in root `PRD/`)
+
+*(The following guidelines apply to the content you will generate within each respective file inside the root `PRD/` directory, e.g., content for "Introduction and Objectives" goes into `PRD/02_introduction_and_objectives.md`)*
 
 ### Introduction and Objectives (Section 1)
 - Create a compelling product vision that aligns with the core concept
@@ -114,21 +120,12 @@ Leverage your full-stack architecture expertise to provide detailed technical sp
 - Define coding standards and documentation requirements, explicitly stating that these will be elaborated in `02_AI-DOCS/Conventions/coding_conventions.md` and other relevant documents in `02_AI-DOCS/` and `03_SPECS/` to be generated in the next phase. Include placeholders or direct references where appropriate.
 - Establish commit conventions and versioning strategy, to be documented in `02_AI-DOCS/Conventions/coding_conventions.md`.
 
-## Output Format and Style
-
-1. **Comprehensive**: Each section must be exhaustively detailed, leaving no room for ambiguity
-2. **Precise**: Use specific, measurable language rather than vague statements
-3. **Technical**: Demonstrate deep technical understanding while remaining accessible
-4. **Structured**: Maintain consistent formatting with proper headings, lists, and tables
-5. **Visual**: Include placeholders for diagrams, wireframes, and other visual elements
-6. **Cross-Referenced**: Reference related sections to maintain consistency
-
 ## Final Validation Checklist
 
-Before submitting your final PRD, verify that it:
+Before final assembly, verify that **each individual file within the root `PRD/` directory**:
 
-- [ ] Follows the template structure with 100% fidelity
-- [ ] Incorporates all elements from the core concept document
+- [ ] Faithfully represents its corresponding section from the original template structure.
+- [ ] Incorporates all relevant elements from the core concept document.
 - [ ] Addresses all user-specific information and preferences
 - [ ] Provides detailed technical specifications for implementation
 - [ ] Includes measurable criteria for all requirements
@@ -151,14 +148,20 @@ As you develop the PRD:
 
 ## Next Steps
 
-### Saving Your Output
+### Saving Your Output (Two-Phase Process)
 
-Once this PRD generation is complete:
+**Phase A: Saving Individual Edited Sections**
+1.  Ensure that all your detailed work and elaborations for each PRD section are saved within their respective files in the **root `PRD/` directory** (e.g., `PRD/00_metadata_and_preamble.md`, `PRD/01_ai_agent_onboarding_protocol.md`, etc.).
+2.  Confirm the original template files within `01_AI-RUN/Template/PRD/` remain unmodified. The files in the root `PRD/` directory are now the "master" editable versions of each section.
 
-1. Ensure the completed PRD content is saved in the **copied file**, `project_prd.md`, located in the project's root directory (or designated output location).
-2. Confirm the original template file (`01_AI-RUN/Template/PRD_template.md`) remains unmodified.
-3. This comprehensive `project_prd.md` will guide all subsequent development activities.
- 
+**Phase B: Assembling the Consolidated `project_prd.md`**
+1.  Once all individual section files in the root `PRD/` directory are complete and internally validated by you:
+    a.  Read the `PRD/README.md` (which should be a copy of `01_AI-RUN/Template/PRD/README.md`) to determine the correct order of the sections.
+    b.  Sequentially read the content of each elaborated section file from the root `PRD/` directory (e.g., `PRD/00_metadata_and_preamble.md`, then `PRD/01_ai_agent_onboarding_protocol.md`, and so on).
+    c.  Concatenate (append) the content of these files, in the correct order, into a **single, new file** named `project_prd.md` located at the **project root**.
+    d.  Ensure this consolidated `project_prd.md` is well-formatted and readable.
+2.  This comprehensive `project_prd.md` will then guide all subsequent development activities. The individual files in the root `PRD/` directory serve as the deconstructed, editable source for this consolidated document.
+
 ### Moving to Technical Specifications & Documentation
 
 To proceed with updating the technical specifications and documentation:
@@ -167,14 +170,12 @@ To proceed with updating the technical specifications and documentation:
 2. Share it with your AI agent.
 3. Reference your completed `project_prd.md`.
 
-```
 @TechDocNavigator
 
 Please gather and organize all technical documentation needed for implementing my project. You can find:
 - The complete PRD at: `project_prd.md`
 
 I need a comprehensive knowledge repository that will serve as the technical foundation for implementation.
-```
 
 ### What to Expect Next
 
