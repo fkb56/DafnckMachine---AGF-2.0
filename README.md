@@ -6,7 +6,10 @@
 
 
 
- Initialisation : with Head Orchestrator 🎩 say : "let's get started with 02_AI-DOCS/Documentation/Codebase_Xray_Prompt.md and 01_AI-RUN/00_Getting_Started.md" 
+ Initialisation : with Head Orchestrator 🎩 say : 
+
+
+"Start with @/Codebase\ Xray.md  and then let's Just start with @/01_AI-RUN/01_Getting_Started.md " 
  
  And let it FLowCoding
 
